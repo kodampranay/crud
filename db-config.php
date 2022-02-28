@@ -1,5 +1,5 @@
 <?php
-$host="remotemysql.com";
+$host="https://remotemysql.com";
 $db_user="M2nGoBaVzR";
 $db_pass="hlNNxLO1Ai";
 $db_name="M2nGoBaVzR";
