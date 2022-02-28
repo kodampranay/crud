@@ -27,7 +27,7 @@ class Welcome extends CI_Controller {
 		// $this->load->model('Crud');
 		// $res=$this->Crud->get_user();
 		// echo json_encode($res);
-		echo "hello worlds";
+		// echo "hello worlds";
 		
 	}
 }
