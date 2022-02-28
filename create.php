@@ -8,7 +8,13 @@ if(!empty($entityBody['name']))
 {
     $id=strtoupper(uniqid());
     $query="INSERT INTO crud(name,idnumber) VALUES ('{$entityBody['name']}',{$id})";
-    mysqli_query($conn,$query) or die('error query');
+    if(mysqli_query($conn,$query) or die('error query'))
+    {
+        echo json_encode('status','ok');
+    }
+    else{
+        echo json_encode('status','error');
+    }
 }
 
 // if(!empty($entityBody.name))
