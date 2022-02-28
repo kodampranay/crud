@@ -19,14 +19,15 @@ class Welcome extends CI_Controller {
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
 	public function index()
-	{	header('Content-Type: applicaiton/json');
-		header('access-control-allow-origin: *');
+	{	
+		// header('Content-Type: applicaiton/json');
+		// header('access-control-allow-origin: *');
 		// header('Access-Control-Allow-Methods: GET');
 		$this->load->view('welcome_message');
 		$this->load->model('Crud');
 		$res=$this->Crud->get_user();
-		echo json_encode($res);
-		// echo "hello world";
+		// echo json_encode($res);
+		echo "hello world";
 		
 	}
 }
