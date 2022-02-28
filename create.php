@@ -6,7 +6,7 @@ $entityBody = json_decode(file_get_contents('php://input'));
 echo $entityBody.name;
 if(!empty($entityBody.name))
 {
-    echo $id=strtoupper(uniqid());
+    // echo $id=strtoupper(uniqid());
 }
 // include'config.php';
 // $query="SELECT * FROM crud";
