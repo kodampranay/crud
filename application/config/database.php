@@ -75,10 +75,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'sql200.epizy.com',
-	'username' => 'epiz_30673968',
-	'password' => 'HGDj5HYlbku3B',
-	'database' => 'epiz_30673968_crud',
+	'hostname' => 'pranay12.mysql.pythonanywhere-services.com',
+	'username' => 'pranay12',
+	'password' => '1234@aBcD',
+	'database' => 'crud',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
