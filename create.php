@@ -7,7 +7,7 @@ $entityBody = json_decode(file_get_contents('php://input'));
 if(!empty($entityBody['name']))
 {
     $id=strtoupper(uniqid());
-    $query="INSERT INTO crud(name,idnumber) VALUES ('{$entityBody['name']}',{$id})";
+    $query="INSERT INTO crud(name,idnumber) VALUES ('{$entityBody['name']}','{$id}')";
     if(mysqli_query($conn,$query) or die('error query'))
     {
         echo json_encode(array('message'=>'ok'));
