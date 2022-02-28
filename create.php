@@ -3,7 +3,7 @@ header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Methods: POST');
 header('Content-Type: application/json');
 $entityBody = file_get_contents('php://input');
-echo json_decode($entityBody);
+print_r( json_decode($entityBody));
 // include'config.php';
 // $query="SELECT * FROM crud";
 // $res=mysqli_query($conn,$query) or die('error query');
