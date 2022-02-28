@@ -4,7 +4,12 @@ header('Access-Control-Allow-Methods: POST');
 header('Content-Type: application/json');
 $entityBody = json_decode(file_get_contents('php://input'));
 
-echo $entityBody['name'];
+if(!empty($entityBody['name']))
+{
+    $id=strtoupper(uniqid());
+    $query="INSERT INTO crud(name,idnumber) VALUES ('{$entityBody['name']}',{$id})";
+    mysqli_query($conn,$query) or die('error query');
+}
 
 // if(!empty($entityBody.name))
 // {
