@@ -9,8 +9,8 @@
     {   $data;
         while($row=mysqli_fetech_assoc($res))
         {
-            $data[]=$row;
+            echo $row['name'];
         }
     }
-    echo json_encode($data);
+    // echo json_encode($data);
 ?>
