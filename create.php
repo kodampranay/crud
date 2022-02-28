@@ -4,7 +4,7 @@ header('Access-Control-Allow-Methods: POST');
 header('Content-Type: application/json');
 $entityBody = file_get_contents('php://input');
 $obj_data=json_decode($entityBody);
-echo $obj_data->name;
+echo $obj_data[0]->name;
 // if(!empty($entityBody.name))
 // {
 //     // echo $id=strtoupper(uniqid());
