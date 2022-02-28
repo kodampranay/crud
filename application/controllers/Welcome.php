@@ -24,10 +24,10 @@ class Welcome extends CI_Controller {
 		// header('access-control-allow-origin: *');
 		// header('Access-Control-Allow-Methods: GET');
 		// $this->load->view('welcome_message');
-		$this->load->model('Crud');
-		$res=$this->Crud->get_user();
+		// $this->load->model('Crud');
+		// $res=$this->Crud->get_user();
 		// echo json_encode($res);
-		echo "hello world";
+		echo "hello worlds";
 		
 	}
 }
