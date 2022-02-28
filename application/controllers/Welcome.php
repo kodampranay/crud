@@ -23,7 +23,7 @@ class Welcome extends CI_Controller {
 		// header('Content-Type: applicaiton/json');
 		// header('access-control-allow-origin: *');
 		// header('Access-Control-Allow-Methods: GET');
-		$this->load->view('welcome_message');
+		// $this->load->view('welcome_message');
 		$this->load->model('Crud');
 		$res=$this->Crud->get_user();
 		// echo json_encode($res);
