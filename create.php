@@ -2,7 +2,7 @@
 header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Methods: POST');
 header('Content-Type: application/json');
-$entityBody = file_get_contents('php://input');
+$entityBody = json_decode(file_get_contents('php://input'));
 echo $entityBody.name;
 // include'config.php';
 // $query="SELECT * FROM crud";
