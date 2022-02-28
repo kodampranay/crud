@@ -3,7 +3,7 @@ header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Methods: POST');
 header('Content-Type: application/json');
 $entityBody = json_decode(file_get_contents('php://input'));
-echo $entityBody.name;
+echo $entityBody->name;
 if(!empty($entityBody.name))
 {
     // echo $id=strtoupper(uniqid());
