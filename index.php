@@ -11,7 +11,11 @@ if(mysqli_num_rows($res)>0)
     {
         $data[]=$row;
     }
+    echo json_encode($data);
+}
+else{
+    echo json_encode(array('error'=>'no data found'));
 }
 
-echo json_encode($data);
+
 ?>
