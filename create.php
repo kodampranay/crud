@@ -10,10 +10,10 @@ if(!empty($entityBody['name']))
     $query="INSERT INTO crud(name,idnumber) VALUES ('{$entityBody['name']}',{$id})";
     if(mysqli_query($conn,$query) or die('error query'))
     {
-        echo json_encode('status','ok');
+        echo json_encode(array('message'=>'ok'));
     }
     else{
-        echo json_encode('status','error');
+        echo json_encode(array('message'=>'error'));
     }
 }
 
