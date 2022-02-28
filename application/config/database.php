@@ -74,8 +74,8 @@ $active_group = 'default';
 $query_builder = TRUE;
 
 $db['default'] = array(
-	'dsn'	=> '',
-	'hostname' => ' databases.000webhost.com',
+	'dsn'	=> 'databases-auth.000webhost.com',
+	'hostname' => '',
 	'username' => 'id18478263_musicapi',
 	'password' => 'Pranay__123456',
 	'database' => 'id18478263_music',
