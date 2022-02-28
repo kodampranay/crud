@@ -74,11 +74,11 @@ $active_group = 'default';
 $query_builder = TRUE;
 
 $db['default'] = array(
-	'dsn'	=> 'databases-auth.000webhost.com',
-	'hostname' => '',
-	'username' => 'id18478263_musicapi',
-	'password' => 'Pranay__123456',
-	'database' => 'id18478263_music',
+	'dsn'	=> '',
+	'hostname' => 'sql200.epizy.com',
+	'username' => 'epiz_30673968',
+	'password' => 'HGDj5HYlbku3B',
+	'database' => 'epiz_30673968_crud',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
