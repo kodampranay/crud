@@ -10,7 +10,7 @@ if($entityBody->name)
     $count=mysqli_query($conn,$check) or die('error');
     if(mysqli_num_rows($count)==0)
     {
-        echo $id=strtoupper(uniqid());
+         $id=strtoupper(uniqid());
     $query="INSERT INTO crud(name,idnumber) VALUES ('{$entityBody->name}','{$id}')";
     if(mysqli_query($conn,$query) or die('error query'))
     {
