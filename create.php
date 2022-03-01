@@ -5,9 +5,9 @@ header('Content-Type: application/json');
 header('Access-Control-Allow-Headers: Content-Type');
 $entityBody = json_decode(file_get_contents('php://input'));
 // print_r($entityBody);
-include 'config.php';
+
 if($entityBody->name)
-{
+{   include 'config.php';
     $check="SELECT * FROM crud WHERE name='{$entityBody->name}'";
     $count=mysqli_query($conn,$check) or die('error');
     if(mysqli_num_rows($count)==0)
