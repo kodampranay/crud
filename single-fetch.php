@@ -2,7 +2,7 @@
 header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Methods: GET');
 header('Content-Type: application/json');
-echo $id=$_GET['id'];
+$id=$_GET['id'];
 include'config.php';
 $query="SELECT * FROM crud WHERE id='{$id}'";
 $res=mysqli_query($conn,$query) or die('error query');
