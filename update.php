@@ -4,7 +4,8 @@ header('Access-Control-Allow-Methods: PUT');
 header('Content-Type: application/json');
 header('Access-Control-Allow-Headers: Content-Type');
  $entityBody = json_decode(file_get_contents('php://input'));
- print_r($entityBody);
+ print_r($_GET);
+//  print_r($entityBody);
 
 // if(!empty($entityBody->name)&&!empty($_GET['id'])&&strlen($entityBody->name)<256)
 // {
