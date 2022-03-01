@@ -11,7 +11,7 @@ if(mysqli_num_rows($res)>0)
     {
         $data[]=$row;
     }
-    echo json_encode($data);
+    echo json_encode(array('message'=>$data));
 }
 else{
     echo json_encode(array('message'=>'error'));
