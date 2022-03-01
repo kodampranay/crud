@@ -6,7 +6,7 @@ header('Access-Control-Allow-Headers: Content-Type');
 $entityBody = json_decode(file_get_contents('php://input'));
 // print_r($entityBody);
 
-if($entityBody->name&&str_length($entityBody->name)<256)
+if($entityBody->name&&strlen($entityBody->name)<256)
 {   include 'config.php';
     $check="SELECT * FROM crud WHERE name='{$entityBody->name}'";
     $count=mysqli_query($conn,$check) or die('error');
