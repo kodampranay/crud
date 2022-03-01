@@ -12,7 +12,7 @@ if(!empty($entityBody->name)&&!empty($_GET['id'])&&strlen($entityBody->name)<256
     $id=$_GET['id'];
 include'config.php';
 $query="UPDATE  crud SET name='{$entityBody->name}' WHERE id='{$id}'";
-if(mysqli_query($conn,$query) or die('error query'))
+if($res=mysqli_query($conn,$query) or die('error query'))
 {
     echo json_encode(array('message'=>'ok'));
 }
