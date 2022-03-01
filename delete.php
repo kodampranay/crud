@@ -2,7 +2,7 @@
 header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Methods: DELETE');
 header('Content-Type: application/json');
-header('Access-Control-Allow-Headers: Content-Type');
+// header('Access-Control-Allow-Headers: Content-Type');
 print_r($_GET);
 // $entityBody = json_decode(file_get_contents('php://input'));
 // // print_r($entityBody);
