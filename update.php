@@ -1,7 +1,7 @@
 <?php
 header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Methods: PUT');
-header('Content-Type: application/json');
+// header('Content-Type: application/json');
  $entityBody = json_decode(file_get_contents('php://input'));
  print_r($entityBody);
 // if(!empty($entityBody->name)&&!empty($_GET['id'])&&strlen($entityBody->name)<256)
